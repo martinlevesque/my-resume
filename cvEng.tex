@@ -1,0 +1,222 @@
+% Curriculum Vitae
+
+\documentclass{cv}
+
+%\usepackage[francais]{babel} % Pour les caractres accentus, ...
+\usepackage{url}
+\usepackage[]{fancyhdr}
+\pagestyle{fancy}
+\usepackage{amssymb}
+
+
+%\usepackage[headsep=1cm,headheight=1in]{geometry}
+
+\usepackage{lastpage}
+
+\usepackage{ifthen}
+
+\renewcommand\headrule{}
+%\setlength{\topmargin}{16pt} 
+%\setlength{\headheight}{12pt} 
+%\setlength{\headsep}{25pt} 
+
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\rfoot{\thepage}
+
+%\lhead{\ifthenelse{\value{page}=1}{}{Martin L\'evesque}}
+
+\begin{document}
+\fontfamily{cmss}\selectfont
+% Entte du CV
+\entete
+%[``Without C, we would have Pasal, Basi and Obol''
+%\hspace*{1.5cm}-\hspace{0.3pt}-\hspace{2pt}anonymous]
+{Martin L\'evesque}
+{6680 Baillargeon\\
+Brossard, QC, Canada\\
+(438) 394-9110\\
+levesque.martin@gmail.com}
+
+% Formation
+
+\section{Summary}
+\begin{itemize}
+\item Enthusiastic senior software developer with more than 6 years experience in the web industry.
+\item Ability and interest to explore quickly emerging technologies.
+% \item More than 5 years experience in state-of-the-art research in telecommunications with provincial and national awards, have participated in international internship and postdoc in Europe and USA.
+\item Interests on applied research, startups, and open source.
+\end{itemize}
+
+\section{Experiences}
+
+\begin{formation}
+
+\item[10/2017 - ...]
+     $\cdot$ Web Developer, \textit{Ubisoft}, Montr\'eal, Canada. \\ ~\\
+
+ \begin{itemize}
+     \item Internal CI/CD deployment tool (called Publishing Pipeline - PUP) used to deploy Ubisoft games and online services worldwide.
+     \item REST and GraphQL APIs design and development.
+     \item Main techs used: Node.js, REST, Graphql, Mongodb, redis, Angular, socket.io for streaming events, deployed as Dockerized Microservices, and more.
+ \end{itemize}
+
+\item[10/2016 - 10/2017]
+     $\cdot$ Concepteur Logiciel Web, \textit{GSI \'Electronique Inc.} (AGCO Corp.), St-Hubert, Canada. \\ ~\\
+
+ \begin{itemize}
+     \item Data acquisition and data analysis via smart farming controllers.
+     \item Cloud AWS backend of 10-15 servers, big data environment (NoSQL). Mnubo (Big Data company from Montreal) is used to store million of events per day.
+     \item Real-time remote visualization via HTML, Angular, and web sockets.
+     \item Agile methodology, Atlassian tools (JIRA, Confluence, bitbucket).
+     \item Automated tests via Mocha.
+     \item Main technologies used: Node.js, Redis, MySql, Angular 1, web sockets, JSON. The backend is fully based on Node.js 6 with REST APIs.
+ \end{itemize}
+
+~\newpage
+
+	\item[05/2016 - 10/2016]
+     $\cdot$ Senior Web Developer, \textit{Mentel}, Montr\'eal, Canada. \\ ~\\
+
+ \begin{itemize}
+     \item Develop and maintain cutting-edge web platforms, mainly using Ruby on Rails, Javascript-Coffeescript, HTML5, CSS3, PostgreSQL.
+     \item Monitor the websites performance and fix bugs.
+     \item Automated testing.
+     \item Exchange with clients to transform requirements into working solutions.
+     \item Make time estimate of new projects, schedule monitoring.
+ \end{itemize}
+
+   \item[08/2015 - 05/2016]
+     $\cdot$ Senior Software Developer, \textit{IOU Financial}, Place Ville Marie (Montr\'eal, Canada). \\ ~\\
+     \begin{itemize}
+     \item Maintain and develop a loan financial platform. The platform is used by hundreds of financial agents located mainly in USA.
+     \item Write RSpec tests while changing or adding functionnalities.
+     \item Automated testing with TeamCity (JetBrains) and resolve Quality Assurance (QA) issues with the QA team.
+     \item Fix reported bugs.
+     \item Software management following an Agile methodology using JIRA (Atlassian) integrated with bitbucket - team of about 10 developers.
+     \item Big Data environment - finance framework with thousands of transactions per day.
+     \item API integration with third-parties: Canada Post (AddressComplete), Equifax, etc.
+     \item \textit{Technologies:} Ruby on Rails, CoffeeScript (and Javascript), RSpec, HAML, HTML5/CSS3, JQuery, MySQL, REST, SOAP, git (bitbucket).
+     \end{itemize}\normalsize 
+
+   \item[09/2014 - 08/2015]
+     $\cdot$ Postdoctoral Fellow and Visiting Research Assistant, \textit{University of Pittsburgh}, PA, USA. \\ ~\\\small
+     Topic: Secured and synchronized internetworking smart grid communications.\normalsize
+
+
+
+	\item[2011 - 2014]
+     $\cdot$ PhD in Telecommunications, INRS, Montr\'eal, Canada. \\ ~\\
+     \small Advanced Fiber-Wireless networks for smart grids: Design, performance modelling (using python), and co-simulation (C++, OMNeT++).  \normalsize   
+     
+   \item[06/2013 - 09/2013]
+     $\cdot$ Research internship, \textit{EDF R\&D}, Clamart, France. \\ ~\\
+     \small Topic: Advanced Smart Grid Multi-Simulation. \normalsize
+     
+   \item[2009 - 2011]
+     $\cdot$ Software Developer, \textit{Codency (wordans.com)}, Montr\'eal, Canada. \\ ~\\
+
+\begin{itemize}
+\item Software development and optimization of high traffic websites and file sharing systems.
+\item \textit{Technologies:} Ruby on Rails, Java, Javascript, HTML/CSS, JQuery, MySQL.
+\end{itemize}     
+       \normalsize
+~\newpage
+   \item[2006]
+     $\cdot$ Software Developer, \textit{Consortech}, Brossard, Canada. \\ ~\\
+     \small Maintain and write softwares managing building plans. Technologies : C, C++. \normalsize
+     
+   \item[2005]
+     $\cdot$ Software Developer, \textit{M.A.G. Integration}, St-Jean-sur-Richelieu, Canada. \\ ~\\
+     \small Transactional websites using Magic eDeveloper. \normalsize
+\end{formation}
+
+
+
+\section{Recent Open Source and Side Projects}
+
+\begin{itemize}
+\item \url{https://www.openode.io/} Cloud application platform project allowing to deploy quickly tiny to large websites at low cost. 
+\item NPMs: \url{https://www.npmjs.com/~martinlev}.
+\item GitHub: \url{https://github.com/martinlevesque}.
+\end{itemize}
+
+\section{Computer Skills}
+
+\begin{itemize}
+	  \item Advanced software development: Optimization, simulation, mathematical modeling, caching, network and Web programming, etc. 
+	  \item Languages: Javascript, Ruby, Elixir, C\# .NET, Python, Coffeescript, C/C++, Matlab, Java, Bash, PHP, etc.
+	  \item Backend/frontend Frameworks: Node.js, Ruby on Rails, Phoenix (Elixir), Vue.js, Angular.
+	  \item Editors: Atom, vim.
+	  \item Automated testing: Mocha.js, expect.js, Minitest, Rspec.
+	  \item Containers: Docker, docker-compose, Kubernetes.
+	  \item Management: JIRA, Redmine.
+	  \item Version control: Git, Mercurial, SVN.
+	  \item Relational databases: MySQL, PostgreSQL, MS SQL, Oracle, etc.
+	  \item Document databases: MongoDB.
+	  \item Key-value store: Redis, memcache.
+	  \item Streaming, queuing, messaging: socket.io, kafka, zeromq.
+	  \item Operating systems: Linux, Mac, Windows.
+\end{itemize}
+
+\newpage
+
+\section{Education}
+
+\begin{formation}
+  \item[2011 - 2014]
+     $\cdot$ PhD in Telecommunications at Institut National de la Recherche Scientifique (INRS), Universit\'e du Qu\'ebec, Montr\'eal, Canada (\emph{Distinction: Excellent}).
+  \item[2008 - 2010]
+     $\cdot$ Master in Computer Science
+at Universit\'e du Qu\'ebec \`a Montr\'eal (UQAM), Montr\'eal, Canada (\emph{Distinction: Excellent}). 
+  \item[2005 - 2007]
+    $\cdot$ Bachelor in Computer Science and Software Engineering at Universit\'e du Qu\'ebec \`a Montr\'eal (UQAM), Montr\'eal, Canada.
+\end{formation}
+
+\section{Academic Awards and Scholarships}
+
+Most of my research publications are available on Google scholar, \url{https://scholar.google.ca/citations?hl=fr&user=LrKNNfoAAAAJ}.
+
+\begin{formation}
+  \item[2014 - 2016]
+    $\cdot$ Postdoctoral fellowship. Awarded by \textit{Natural Sciences and Engineering Research Council of Canada (NSERC).}
+   \item[2013]
+     $\cdot$ SYTACom (McGill University, Canada) International Internship Scholarship.
+   \item[2012 - 2014]
+     $\cdot$ Doctoral scholarship. Awarded by \textit{Fonds de Recherche du Qu\'ebec - Nature et Technologies} (FRQNT).
+   \item[2008 - 2009]
+     $\cdot$ Master scholarship. Awarded by \textit{Fonds de Recherche du Qu\'ebec - Nature et Technologies} (FRQNT).
+   \item[2008]
+     $\cdot$ Bourse d'excellence de la Facult\'e des sciences pour les cycles sup\'erieurs. Awarded by UQAM.
+   \item[2007]
+     $\cdot$ Undergraduate research scholarship. Awarded by \textit{Natural Sciences and Engineering Research Council of Canada (NSERC)}.
+\end{formation}
+
+%\section{References}
+
+%\poste{}{\ }
+%\begin{itemize}
+%\item Prof. Martin Maier, Institut National de la Recherche Scientifique (INRS), Montr\'eal, Canada. Phone: +1 (514) 228-7024. Email: maier@emt.inrs.ca.
+%\item Eric Suignard, Engineer, EDF R\&D, 1, avenue du G\'en\'eral de Gaulle, Clamart, France. Phone: +33 1 47 65 46 43. Email: eric.suignard@edf.fr.
+%\item Prof. Halima Elbiaze, Universit\'e du Qu\'ebec \`a Montr\'eal. Phone: (514) 987-3000, office 8485. Email: elbiaze.halima@uqam.ca.
+%\end{itemize}
+
+%\section{Computer Skills}
+%
+%\begin{experience}
+%
+%	\begin{tasks}
+%	  \item Advanced programming: Mathematical modeling, simulation, optimization, caching, network and Web programming, etc. My GitHub, where I share some of my code: \url{https://github.com/martinlevesque}.
+%	  \item Programming languages: Python, C/C++, Matlab, Java, Bash, PHP, etc.
+%	  \item Version control: Git, SVN.
+%	  \item Relational databases: MySQL, Oracle, etc.
+%	  \item Operating systems: Linux, Mac, Windows.
+%    \end{tasks}
+%
+%\end{experience}
+
+\end{document}
